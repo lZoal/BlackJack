@@ -12,9 +12,18 @@ namespace BlackJack
 {
     public partial class Form1 : Form
     {
+        TrumpCard card = new TrumpCard();
         public Form1()
         {
+
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+            pictureBox1.Load(card.deck[0].Second);
+
         }
     }
 }

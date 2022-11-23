@@ -54,6 +54,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrumpCard.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +79,62 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Img\0.png" />
+    <Content Include="Img\1.png" />
+    <Content Include="Img\10.png" />
+    <Content Include="Img\11.png" />
+    <Content Include="Img\12.png" />
+    <Content Include="Img\13.png" />
+    <Content Include="Img\14.png" />
+    <Content Include="Img\15.png" />
+    <Content Include="Img\16.png" />
+    <Content Include="Img\17.png" />
+    <Content Include="Img\18.png" />
+    <Content Include="Img\19.png" />
+    <Content Include="Img\2.png" />
+    <Content Include="Img\20.png" />
+    <Content Include="Img\21.png" />
+    <Content Include="Img\22.png" />
+    <Content Include="Img\23.png" />
+    <Content Include="Img\24.png" />
+    <Content Include="Img\25.png" />
+    <Content Include="Img\26.png" />
+    <Content Include="Img\27.png" />
+    <Content Include="Img\28.png" />
+    <Content Include="Img\29.png" />
+    <Content Include="Img\3.png" />
+    <Content Include="Img\30.png" />
+    <Content Include="Img\31.png" />
+    <Content Include="Img\32.png" />
+    <Content Include="Img\33.png" />
+    <Content Include="Img\34.png" />
+    <Content Include="Img\35.png" />
+    <Content Include="Img\36.png" />
+    <Content Include="Img\37.png" />
+    <Content Include="Img\38.png" />
+    <Content Include="Img\39.png" />
+    <Content Include="Img\4.png" />
+    <Content Include="Img\40.png" />
+    <Content Include="Img\41.png" />
+    <Content Include="Img\42.png" />
+    <Content Include="Img\43.png" />
+    <Content Include="Img\44.png" />
+    <Content Include="Img\45.png" />
+    <Content Include="Img\46.png" />
+    <Content Include="Img\47.png" />
+    <Content Include="Img\48.png" />
+    <Content Include="Img\49.png" />
+    <Content Include="Img\5.png" />
+    <Content Include="Img\50.png" />
+    <Content Include="Img\51.png" />
+    <Content Include="Img\52.png" />
+    <Content Include="Img\6.png" />
+    <Content Include="Img\7.png" />
+    <Content Include="Img\8.png" />
+    <Content Include="Img\9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
