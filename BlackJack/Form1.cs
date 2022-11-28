@@ -16,7 +16,7 @@ namespace BlackJack
     {
         static int cnt = 0;
         int uservalue = 0,dealervalue=0;
-        List<PictureBox> c_user=new List<PictureBox>();
+        List<PictureBox> c_user=new List<PictureBox>(), d_com = new List<PictureBox>();
 
         
     
