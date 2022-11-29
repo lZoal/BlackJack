@@ -39,7 +39,7 @@ public class TrumpCard
         init_swit();
         suffle_deck();
     }
-    void init_swit()
+    public void init_swit()
     {
         for (int i = 0; i < swit.Length; i++)
         {
@@ -49,7 +49,7 @@ public class TrumpCard
 
     }
     //덱 셔플
-    void suffle_deck()
+    public void suffle_deck()
     {
         w = 0;
         r = 0;
@@ -57,14 +57,14 @@ public class TrumpCard
         while (w < 52)
         {
             r = rand.Next(0, 52);
-            String path = "./Img/" + r + ".png";
+
             if (swit[r] == false)
             {
                 swit[r] = true;
-             
+                String path = "./Img/" + r + ".png";
+                r = r % 13 >= 10 ? 10 : r % 13 +1;
                 Pair<int , String> tmp = new Pair<int , String>(r, path);
-                deck[w] = tmp;
-                w++;
+                deck[w++] = tmp;
 
             }
         }

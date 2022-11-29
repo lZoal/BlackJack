@@ -1,0 +1,11 @@
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\bin\Release\BlackJack.exe.config
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\bin\Release\BlackJack.exe
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\bin\Release\BlackJack.pdb
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.csproj.AssemblyReference.cache
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.csproj.SuggestedBindingRedirects.cache
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.Form1.resources
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.Properties.Resources.resources
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.csproj.GenerateResource.cache
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.csproj.CoreCompileInputs.cache
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.exe
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.pdb
