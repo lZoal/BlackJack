@@ -151,9 +151,7 @@ namespace BlackJack
 
         private void button3_Click(object sender, EventArgs e) //다시하기 버튼
         {
-
-            InitGame();
-            
+            InitGame();  
         }
 
         private void button1_Click(object sender, EventArgs e) // 유저 카드 받기 버튼 Hit
