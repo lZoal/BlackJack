@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
 public class Pair<T, U>
 {
     public Pair()
@@ -62,8 +60,8 @@ public class TrumpCard
             {
                 swit[r] = true;
                 String path = "./Img/" + r + ".png";
-                r = r % 13 >= 10 ? 10 : r % 13 +1;
-                Pair<int , String> tmp = new Pair<int , String>(r, path);
+                r = r % 13 >= 10 ? 10 : r % 13 + 1;
+                Pair<int, String> tmp = new Pair<int, String>(r, path);
                 deck[w++] = tmp;
 
             }

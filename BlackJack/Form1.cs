@@ -1,36 +1,54 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-
 
 namespace BlackJack
 {
     public partial class Form1 : Form
     {
-        static float winratio=0;
-        static int cnt = 0,win=0,lose=0,draw=0, uservalue = 0,dealervalue=0,usercnt=2;
+        static float winratio = 0;
+        static int cnt = 0, win = 0, lose = 0, draw = 0, uservalue = 0, dealervalue = 0, usercnt = 2;
+        static int wincnt = 0, numcnt = 0;
         static bool ua = false, da = false;
-        List<PictureBox> c_user=new List<PictureBox>(), d_com = new List<PictureBox>();
+        List<PictureBox> c_user = new List<PictureBox>(), d_com = new List<PictureBox>();
         TrumpCard card = new TrumpCard();
+        private Boolean m_blLoginCheck = false;
+        public int[] num = new int[100];
+        public int index;
+        public string[] rank = { };
+        public string[] rankIndex = { };
+        public string[] nickname = { };
 
-        void InitGame()
+        private void button4_Click(object sender, EventArgs e)
         {
-            ua = false;da = false;
+            Form4 _Form = new Form4(this);
+            _Form.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form5 _Form = new Form5(this);
+            _Form.ShowDialog();
+        }
+
+        public Boolean LoginCheck
+        {
+            get { return m_blLoginCheck; }
+            set { m_blLoginCheck = value; }
+        }
+
+        void InitGame()//게임 초기설정
+        {
+            ua = false; da = false;
             button1.Enabled = true; //버튼 활성화
             button2.Enabled = true;
             button3.Enabled = false;
-            cnt = 0; uservalue = 0; dealervalue = 0;usercnt = 2;
+            cnt = 0; uservalue = 0; dealervalue = 0; usercnt = 2;
             textBox2.Text = "";
             textBox3.Text = win + "승 " + draw + "무 " + lose + "패";
             card.init_swit(); card.suffle_deck();
-            for(int i = 2; i <= 5; i++)
+            for (int i = 2; i <= 5; i++)
             {
                 c_user[i].Visible = false;
                 d_com[i].Visible = false;
@@ -45,7 +63,7 @@ namespace BlackJack
             uservalue = card.deck[0].First + card.deck[1].First; //유저패 총합
             dealervalue = card.deck[2].First + card.deck[3].First; //딜러패 총합
 
-            if ((card.deck[0].First == 1 || card.deck[1].First == 1) && uservalue+10 <= 21) // A(에이스) 카드는 1 또는 11로 처리 초기처리는 높은수인 11로 처리 카드를 더받을경우 21초과시 1로처리
+            if ((card.deck[0].First == 1 || card.deck[1].First == 1) && uservalue + 10 <= 21) // A(에이스) 카드는 1 또는 11로 처리 초기처리는 높은수인 11로 처리 카드를 더받을경우 21초과시 1로처리
             {
                 uservalue += 10;
                 textBox1.Text = (uservalue).ToString();
@@ -55,31 +73,45 @@ namespace BlackJack
             else
                 textBox1.Text = (card.deck[0].First + card.deck[1].First).ToString();
 
-            if (( card.deck[3].First == 1 || card.deck[2].First==1) && dealervalue+10 <= 21) 
+            if ((card.deck[3].First == 1 || card.deck[2].First == 1) && dealervalue + 10 <= 21)
             {
                 dealervalue += 10;
                 textBox1.Text = (uservalue).ToString();
                 da = true;
 
             }
-            textBox4.Text = card.deck[3].First.ToString() + " + ?";
+            textBox4.Text = card.deck[3].First !=1?card.deck[3].First.ToString() + " + ?": (card.deck[3].First+10).ToString();
         }
         void HitCard()
         {
             c_user[usercnt].Visible = true;
             c_user[usercnt++].Load(card.deck[++cnt].Second);
             uservalue = uservalue + card.deck[cnt].First;
-         if (uservalue >21 && ua )
+            if (uservalue > 21 && ua)
             {
                 uservalue -= 10;
 
             }
             textBox1.Text = uservalue.ToString();
-            if (uservalue > 21 )
+            if (uservalue > 21)
             {
                 textBox1.Text = uservalue.ToString();
                 textBox2.Text = "패배";
                 lose++;
+                num[numcnt] = wincnt;
+                if (wincnt != 0)
+                {
+                    StreamWriter writer1;
+                    StreamWriter writer2;
+                    writer1 = File.AppendText("Rank.txt");
+                    writer2 = File.AppendText("NicknameIndex.txt");
+                    writer1.WriteLine(num[numcnt]);
+                    writer2.WriteLine(index);
+                    writer1.Close();
+                    writer2.Close();
+                }
+                numcnt++;
+                wincnt = 0;
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = true;
@@ -95,28 +127,51 @@ namespace BlackJack
         {
             d_com[0].Load(card.deck[2].Second);
             int i = 2;
+
             while (dealervalue <= 16)
             {
                 d_com[i].Visible = true;
-                d_com[i].Load(card.deck[cnt].Second);
-                dealervalue += card.deck[cnt].First;
-                if (dealervalue > 21 && da)
+                d_com[i++].Load(card.deck[cnt].Second);
+                if (card.deck[cnt].First == 1)
+                {
+                    dealervalue += card.deck[cnt].First + 10;
+                    da = true;
+                }
+                else
+                    dealervalue += card.deck[cnt].First;
+                cnt++;
+                
+                if (dealervalue > 21 && da) //a가있을때 
                 {
                     dealervalue -= 10;
+                    da = false;
                 }
-
-
             }
             textBox4.Text = dealervalue.ToString();
             if ((dealervalue < uservalue && uservalue <= 21) || dealervalue > 21)
             {
                 textBox2.Text = "승리";
                 win++;
+                wincnt++;
             }
             else if (dealervalue > uservalue)
             {
                 textBox2.Text = "패배";
                 lose++;
+                num[numcnt] = wincnt;
+                if (wincnt != 0)
+                {
+                    StreamWriter writer1;
+                    StreamWriter writer2;
+                    writer1 = File.AppendText("Rank.txt");
+                    writer2 = File.AppendText("NicknameIndex.txt");
+                    writer1.WriteLine(num[numcnt]);
+                    writer2.WriteLine(index);
+                    writer1.Close();
+                    writer2.Close();
+                }
+                numcnt++;
+                wincnt = 0;
             }
 
             else
@@ -125,8 +180,8 @@ namespace BlackJack
                 textBox2.Text = "무승부";
             }
             textBox3.Text = win + "승 " + draw + "무 " + lose + "패";
-            winratio = ((float)win / ((float)win + (float)lose) )*100;
-            textBox5.Text = winratio.ToString()+"%";
+            winratio = ((float)win / ((float)win + (float)lose)) * 100;
+            textBox5.Text = winratio.ToString() + "%";
             button1.Enabled = false;
             button2.Enabled = false;
             button3.Enabled = true;
@@ -136,12 +191,18 @@ namespace BlackJack
         {
             InitializeComponent();
             c_user.Add(user0); c_user.Add(user1); c_user.Add(user2); c_user.Add(user3); c_user.Add(user4); c_user.Add(user5);
-            d_com.Add(dealer0); d_com.Add(dealer1); d_com.Add(dealer2); d_com.Add(dealer3); d_com.Add(dealer4); d_com.Add(dealer5); 
+            d_com.Add(dealer0); d_com.Add(dealer1); d_com.Add(dealer2); d_com.Add(dealer3); d_com.Add(dealer4); d_com.Add(dealer5);
         }
 
         private void Form1_Load(object sender, EventArgs e) // 처음 로드 했을 때 카드 두장씩 불러오기
         {
+            Form2 _Form = new Form2(this);
+            _Form.ShowDialog();
+
+            if (!m_blLoginCheck) this.Close();
             InitGame();
+            string path1 = @"Nickname.txt";
+            nickname = File.ReadAllLines(path1);
         }
 
         private void button2_Click(object sender, EventArgs e) //멈추고 결과확인버튼
@@ -151,7 +212,7 @@ namespace BlackJack
 
         private void button3_Click(object sender, EventArgs e) //다시하기 버튼
         {
-            InitGame();  
+            InitGame();
         }
 
         private void button1_Click(object sender, EventArgs e) // 유저 카드 받기 버튼 Hit

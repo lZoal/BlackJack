@@ -9,3 +9,32 @@ C:\Users\TFX255S\source\repos\BlackJack\BlackJack\bin\Debug\BlackJack.exe
 C:\Users\TFX255S\source\repos\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
 C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.exe
 C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.AssemblyReference.cache
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form1.resources
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form2.resources
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form3.resources
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form4.resources
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form5.resources
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.Properties.Resources.resources
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.GenerateResource.cache
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.CoreCompileInputs.cache
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\HanGyeongSu\Desktop\BlackJack-master\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.AssemblyReference.cache
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.SuggestedBindingRedirects.cache
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form1.resources
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form2.resources
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form3.resources
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form4.resources
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.Form5.resources
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.Properties.Resources.resources
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.GenerateResource.cache
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.csproj.CoreCompileInputs.cache
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\TFX255S\Documents\카카오톡 받은 파일\BlackJack-master\BlackJack\obj\Debug\BlackJack.pdb
