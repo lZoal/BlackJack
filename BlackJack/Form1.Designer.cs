@@ -47,7 +47,7 @@
             this.dealer5 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.user0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user2)).BeginInit();
@@ -244,17 +244,20 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(660, 366);
+            this.textBox5.Location = new System.Drawing.Point(660, 175);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(195, 25);
             this.textBox5.TabIndex = 2;
             // 
-            // textBox6
+            // button3
             // 
-            this.textBox6.Location = new System.Drawing.Point(660, 397);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(195, 25);
-            this.textBox6.TabIndex = 2;
+            this.button3.Location = new System.Drawing.Point(880, 132);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Retry";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -264,9 +267,9 @@
             this.Controls.Add(this.user5);
             this.Controls.Add(this.user4);
             this.Controls.Add(this.user3);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox2);
@@ -322,7 +325,7 @@
         private System.Windows.Forms.PictureBox dealer5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button3;
     }
 }
 

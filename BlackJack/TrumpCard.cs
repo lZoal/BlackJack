@@ -39,7 +39,7 @@ public class TrumpCard
         init_swit();
         suffle_deck();
     }
-    void init_swit()
+    public void init_swit()
     {
         for (int i = 0; i < swit.Length; i++)
         {
@@ -49,7 +49,7 @@ public class TrumpCard
 
     }
     //덱 셔플
-    void suffle_deck()
+    public void suffle_deck()
     {
         w = 0;
         r = 0;
