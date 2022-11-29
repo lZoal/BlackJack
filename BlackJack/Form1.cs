@@ -55,7 +55,7 @@ namespace BlackJack
             else
                 textBox1.Text = (card.deck[0].First + card.deck[1].First).ToString();
 
-            if (( card.deck[3].First == 1) && dealervalue+10 <= 21) 
+            if (( card.deck[3].First == 1 || card.deck[2].First==1) && dealervalue+10 <= 21) 
             {
                 dealervalue += 10;
                 textBox1.Text = (uservalue).ToString();
