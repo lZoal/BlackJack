@@ -5,15 +5,15 @@ using System.Windows.Forms;
 namespace BlackJack
 {
 
-    public partial class Form3 : Form
+    public partial class Register : Form
     {
-        private Form2 _Form2;
+        private LogIn _Form2;
         public string[] ID = { };
         public string[] nickname = { };
         private bool isID = true;
         private bool isNickname = true;
 
-        public Form3(Form2 form2)
+        public Register(LogIn form2)
         {
             _Form2 = form2;
             InitializeComponent();

@@ -1,6 +1,6 @@
 ﻿namespace BlackJack
 {
-    partial class Form1
+    partial class Game
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -33,8 +33,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.user1 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_hit = new System.Windows.Forms.Button();
+            this.btn_stand = new System.Windows.Forms.Button();
             this.user2 = new System.Windows.Forms.PictureBox();
             this.user3 = new System.Windows.Forms.PictureBox();
             this.user4 = new System.Windows.Forms.PictureBox();
@@ -47,9 +47,9 @@
             this.dealer5 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_retry = new System.Windows.Forms.Button();
+            this.btn_rule = new System.Windows.Forms.Button();
+            this.btn_rank = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.user0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user2)).BeginInit();
@@ -112,27 +112,27 @@
             this.textBox3.Size = new System.Drawing.Size(100, 25);
             this.textBox3.TabIndex = 2;
             // 
-            // button1
+            // btn_hit
             // 
-            this.button1.Location = new System.Drawing.Point(518, 29);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Hit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_hit.Location = new System.Drawing.Point(518, 29);
+            this.btn_hit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_hit.Name = "btn_hit";
+            this.btn_hit.Size = new System.Drawing.Size(80, 40);
+            this.btn_hit.TabIndex = 3;
+            this.btn_hit.Text = "Hit";
+            this.btn_hit.UseVisualStyleBackColor = true;
+            this.btn_hit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_stand
             // 
-            this.button2.Location = new System.Drawing.Point(517, 73);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 40);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Stand";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_stand.Location = new System.Drawing.Point(517, 73);
+            this.btn_stand.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_stand.Name = "btn_stand";
+            this.btn_stand.Size = new System.Drawing.Size(80, 40);
+            this.btn_stand.TabIndex = 3;
+            this.btn_stand.Text = "Stand";
+            this.btn_stand.UseVisualStyleBackColor = true;
+            this.btn_stand.Click += new System.EventHandler(this.button2_Click);
             // 
             // user2
             // 
@@ -270,40 +270,40 @@
             this.textBox5.Size = new System.Drawing.Size(100, 25);
             this.textBox5.TabIndex = 2;
             // 
-            // button3
+            // btn_retry
             // 
-            this.button3.Location = new System.Drawing.Point(517, 117);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Retry";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_retry.Location = new System.Drawing.Point(517, 117);
+            this.btn_retry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_retry.Name = "btn_retry";
+            this.btn_retry.Size = new System.Drawing.Size(80, 40);
+            this.btn_retry.TabIndex = 3;
+            this.btn_retry.Text = "Retry";
+            this.btn_retry.UseVisualStyleBackColor = true;
+            this.btn_retry.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btn_rule
             // 
-            this.button4.Location = new System.Drawing.Point(517, 428);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "룰 설명";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_rule.Location = new System.Drawing.Point(517, 428);
+            this.btn_rule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_rule.Name = "btn_rule";
+            this.btn_rule.Size = new System.Drawing.Size(80, 40);
+            this.btn_rule.TabIndex = 4;
+            this.btn_rule.Text = "룰 설명";
+            this.btn_rule.UseVisualStyleBackColor = true;
+            this.btn_rule.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btn_rank
             // 
-            this.button5.Location = new System.Drawing.Point(517, 476);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 40);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "랭킹";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_rank.Location = new System.Drawing.Point(517, 476);
+            this.btn_rank.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_rank.Name = "btn_rank";
+            this.btn_rank.Size = new System.Drawing.Size(80, 40);
+            this.btn_rank.TabIndex = 5;
+            this.btn_rank.Text = "랭킹";
+            this.btn_rank.UseVisualStyleBackColor = true;
+            this.btn_rank.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Form1
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,14 +311,14 @@
             this.Controls.Add(this.dealer5);
             this.Controls.Add(this.dealer4);
             this.Controls.Add(this.dealer3);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_rank);
+            this.Controls.Add(this.btn_rule);
             this.Controls.Add(this.user5);
             this.Controls.Add(this.user4);
             this.Controls.Add(this.user3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_retry);
+            this.Controls.Add(this.btn_stand);
+            this.Controls.Add(this.btn_hit);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox2);
@@ -331,7 +331,7 @@
             this.Controls.Add(this.dealer0);
             this.Controls.Add(this.user0);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Name = "Game";
             this.Text = "블랙잭";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.user0)).EndInit();
@@ -358,8 +358,8 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox user1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_hit;
+        private System.Windows.Forms.Button btn_stand;
         private System.Windows.Forms.PictureBox user2;
         private System.Windows.Forms.PictureBox user3;
         private System.Windows.Forms.PictureBox user4;
@@ -372,9 +372,9 @@
         private System.Windows.Forms.PictureBox dealer5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_retry;
+        private System.Windows.Forms.Button btn_rule;
+        private System.Windows.Forms.Button btn_rank;
 
     }
 }

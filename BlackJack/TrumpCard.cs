@@ -29,7 +29,7 @@ public class TrumpCard
 {
 
     //랜덤숫자 배열
-    public Pair<int, String>[] deck = new Pair<int, String>[52];
+    public Pair<int, String>[] deck = new Pair<int, String>[52]; //value, path 를가지는 pair클래스생성
     // 중복체크
     bool[] swit = new bool[52];
     int r, w = 0;

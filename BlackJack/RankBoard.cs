@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace BlackJack
 {
-    public partial class Form5 : Form
+    public partial class RankBoard : Form
     {
-        private Form1 _Form1;
+        private Game _Form1;
         public string[] rank = { };
         public string[] nicknameIndex = { };
         public int[] num = new int[100];
@@ -16,7 +16,7 @@ namespace BlackJack
         string tmp1;
         string tmp2;
 
-        public Form5(Form1 form1)
+        public RankBoard(Game form1)
         {
             _Form1 = form1;
             InitializeComponent();

@@ -1,7 +1,7 @@
 ﻿
 namespace BlackJack
 {
-    partial class Form4
+    partial class RankBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,41 +29,40 @@ namespace BlackJack
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 81);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(461, 281);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(75, 7);
+            this.label1.Font = new System.Drawing.Font("휴먼옛체", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(5, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 55);
+            this.label1.Size = new System.Drawing.Size(695, 85);
             this.label1.TabIndex = 3;
-            this.label1.Text = "BlackJack Rule";
+            this.label1.Text = "Check Your Rank!";
             // 
-            // Form4
+            // label2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(14, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 34);
+            this.label2.TabIndex = 4;
+            // 
+            // RankBoard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 382);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(725, 474);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form4";
-            this.Text = "블랙잭 룰";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "RankBoard";
+            this.Text = "랭킹";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,7 +70,7 @@ namespace BlackJack
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
