@@ -5,32 +5,29 @@ using System.Windows.Forms;
 
 namespace BlackJack
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
+        // 초기변수할당
         static float winratio = 0;
-        static int cnt = 0, win = 0, lose = 0, draw = 0, uservalue = 0, dealervalue = 0, usercnt = 2;
-        static int wincnt = 0, numcnt = 0;
+        static int cnt = 0, win = 0, lose = 0, draw = 0, uservalue = 0, dealervalue = 0, usercnt = 2, wincnt = 0, numcnt = 0;
         static bool ua = false, da = false;
-
-
         List<PictureBox> c_user = new List<PictureBox>(), d_com = new List<PictureBox>();
         TrumpCard card = new TrumpCard();
         private Boolean m_blLoginCheck = false;
         public int[] num = new int[100];
         public int index;
-        public string[] rank = { };
-        public string[] rankIndex = { };
-        public string[] nickname = { };
+        public string[] rank = { }, rankIndex = { }, nickname = { };
+
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 _Form = new Form4(this);
+            Rule _Form = new Rule(this);
             _Form.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form5 _Form = new Form5(this);
+            RankBoard _Form = new RankBoard(this);
             _Form.ShowDialog();
         }
 
@@ -41,9 +38,9 @@ namespace BlackJack
         }
         void Btn_set()//버튼 상태
         {
-            button1.Enabled = !button1.Enabled;
-            button2.Enabled = !button2.Enabled;
-            button3.Enabled = !button3.Enabled;
+            btn_hit.Enabled = !btn_hit.Enabled;
+            btn_stand.Enabled = !btn_stand.Enabled;
+            btn_retry.Enabled = !btn_retry.Enabled;
         }
         void InitGame()//게임 초기설정
         {
@@ -119,9 +116,9 @@ namespace BlackJack
                 }
                 numcnt++;
                 wincnt = 0;
-                button1.Enabled = false;
-                button2.Enabled = false;
-                button3.Enabled = true;
+                btn_hit.Enabled = false;
+                btn_stand.Enabled = false;
+                btn_retry.Enabled = true;
                 textBox3.Text = win + "승 " + draw + "무 " + lose + "패";
                 winratio = ((float)win / ((float)win + (float)lose)) * 100;
                 textBox5.Text = winratio.ToString() + "%";
@@ -192,7 +189,7 @@ namespace BlackJack
             Btn_set();
         }
 
-        public Form1()
+        public Game()
         {
             InitializeComponent();
             c_user.Add(user0); c_user.Add(user1); c_user.Add(user2); c_user.Add(user3); c_user.Add(user4); c_user.Add(user5);
@@ -201,10 +198,10 @@ namespace BlackJack
 
         private void Form1_Load(object sender, EventArgs e) // 처음 로드 했을 때 카드 두장씩 불러오기
         {
-            Form2 _Form = new Form2(this);
+            LogIn _Form = new LogIn(this);
             _Form.ShowDialog();
-            button1.Enabled=false;
-            button2.Enabled = false;
+            btn_hit.Enabled=false;
+            btn_stand.Enabled = false;
             if (!m_blLoginCheck) this.Close();
             InitGame();
             string path1 = @"Nickname.txt";

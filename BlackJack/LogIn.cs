@@ -4,16 +4,16 @@ using System.Windows.Forms;
 
 namespace BlackJack
 {
-    public partial class Form2 : Form
+    public partial class LogIn : Form
     {
-        private Form1 _Form1;
+        private Game _Form1;
 
         public string[] ID = { };
         public string[] password = { };
         public string[] nickname = { };
         public int num;
 
-        public Form2(Form1 form1)
+        public LogIn(Game form1)
         {
             _Form1 = form1;
             InitializeComponent();
@@ -70,7 +70,7 @@ namespace BlackJack
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 _Form = new Form3(this);
+            Register _Form = new Register(this);
             _Form.ShowDialog();
         }
 

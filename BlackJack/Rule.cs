@@ -2,10 +2,10 @@
 
 namespace BlackJack
 {
-    public partial class Form4 : Form
+    public partial class Rule : Form
     {
-        private Form1 _Form1;
-        public Form4(Form1 form1)
+        private Game _Form1;
+        public Rule(Game form1)
         {
             _Form1 = form1;
             InitializeComponent();
