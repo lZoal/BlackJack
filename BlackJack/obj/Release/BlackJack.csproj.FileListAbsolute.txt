@@ -9,3 +9,7 @@ C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.csproj.G
 C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.csproj.CoreCompileInputs.cache
 C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.exe
 C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.pdb
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.Form2.resources
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.Form3.resources
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.Form4.resources
+C:\Users\TFX255S\source\repos\BlackJack\BlackJack\obj\Release\BlackJack.Form5.resources

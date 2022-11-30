@@ -67,10 +67,10 @@
             // user0
             // 
             this.user0.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.user0.Location = new System.Drawing.Point(18, 8);
+            this.user0.Location = new System.Drawing.Point(18, 35);
             this.user0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user0.Name = "user0";
-            this.user0.Size = new System.Drawing.Size(76, 104);
+            this.user0.Size = new System.Drawing.Size(87, 130);
             this.user0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.user0.TabIndex = 0;
             this.user0.TabStop = false;
@@ -78,27 +78,27 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(578, 47);
+            this.textBox1.Location = new System.Drawing.Point(381, 19);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 21);
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(578, 83);
+            this.textBox2.Location = new System.Drawing.Point(381, 64);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 21);
+            this.textBox2.Size = new System.Drawing.Size(100, 25);
             this.textBox2.TabIndex = 2;
             // 
             // user1
             // 
             this.user1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.user1.Location = new System.Drawing.Point(35, 24);
+            this.user1.Location = new System.Drawing.Point(37, 55);
             this.user1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user1.Name = "user1";
-            this.user1.Size = new System.Drawing.Size(76, 104);
+            this.user1.Size = new System.Drawing.Size(87, 130);
             this.user1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.user1.TabIndex = 0;
             this.user1.TabStop = false;
@@ -106,18 +106,18 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(578, 108);
+            this.textBox3.Location = new System.Drawing.Point(381, 95);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(171, 21);
+            this.textBox3.Size = new System.Drawing.Size(100, 25);
             this.textBox3.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(770, 48);
+            this.button1.Location = new System.Drawing.Point(518, 29);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 18);
+            this.button1.Size = new System.Drawing.Size(80, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "Hit";
             this.button1.UseVisualStyleBackColor = true;
@@ -125,10 +125,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(770, 82);
+            this.button2.Location = new System.Drawing.Point(517, 73);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 18);
+            this.button2.Size = new System.Drawing.Size(80, 40);
             this.button2.TabIndex = 3;
             this.button2.Text = "Stand";
             this.button2.UseVisualStyleBackColor = true;
@@ -137,10 +137,10 @@
             // user2
             // 
             this.user2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.user2.Location = new System.Drawing.Point(52, 40);
+            this.user2.Location = new System.Drawing.Point(56, 75);
             this.user2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user2.Name = "user2";
-            this.user2.Size = new System.Drawing.Size(76, 104);
+            this.user2.Size = new System.Drawing.Size(87, 130);
             this.user2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.user2.TabIndex = 0;
             this.user2.TabStop = false;
@@ -149,10 +149,10 @@
             // user3
             // 
             this.user3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.user3.Location = new System.Drawing.Point(70, 56);
+            this.user3.Location = new System.Drawing.Point(77, 95);
             this.user3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user3.Name = "user3";
-            this.user3.Size = new System.Drawing.Size(76, 104);
+            this.user3.Size = new System.Drawing.Size(87, 130);
             this.user3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.user3.TabIndex = 0;
             this.user3.TabStop = false;
@@ -161,10 +161,10 @@
             // user4
             // 
             this.user4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.user4.Location = new System.Drawing.Point(88, 72);
+            this.user4.Location = new System.Drawing.Point(98, 115);
             this.user4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user4.Name = "user4";
-            this.user4.Size = new System.Drawing.Size(76, 104);
+            this.user4.Size = new System.Drawing.Size(87, 130);
             this.user4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.user4.TabIndex = 0;
             this.user4.TabStop = false;
@@ -173,10 +173,10 @@
             // user5
             // 
             this.user5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.user5.Location = new System.Drawing.Point(105, 88);
+            this.user5.Location = new System.Drawing.Point(117, 135);
             this.user5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.user5.Name = "user5";
-            this.user5.Size = new System.Drawing.Size(76, 104);
+            this.user5.Size = new System.Drawing.Size(87, 130);
             this.user5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.user5.TabIndex = 0;
             this.user5.TabStop = false;
@@ -185,10 +185,10 @@
             // dealer0
             // 
             this.dealer0.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dealer0.Location = new System.Drawing.Point(19, 257);
+            this.dealer0.Location = new System.Drawing.Point(18, 386);
             this.dealer0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dealer0.Name = "dealer0";
-            this.dealer0.Size = new System.Drawing.Size(76, 104);
+            this.dealer0.Size = new System.Drawing.Size(87, 130);
             this.dealer0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dealer0.TabIndex = 0;
             this.dealer0.TabStop = false;
@@ -197,10 +197,10 @@
             // dealer3
             // 
             this.dealer3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dealer3.Location = new System.Drawing.Point(290, 257);
+            this.dealer3.Location = new System.Drawing.Point(137, 386);
             this.dealer3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dealer3.Name = "dealer3";
-            this.dealer3.Size = new System.Drawing.Size(76, 104);
+            this.dealer3.Size = new System.Drawing.Size(87, 130);
             this.dealer3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dealer3.TabIndex = 0;
             this.dealer3.TabStop = false;
@@ -209,10 +209,10 @@
             // dealer1
             // 
             this.dealer1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dealer1.Location = new System.Drawing.Point(108, 257);
+            this.dealer1.Location = new System.Drawing.Point(55, 386);
             this.dealer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dealer1.Name = "dealer1";
-            this.dealer1.Size = new System.Drawing.Size(76, 104);
+            this.dealer1.Size = new System.Drawing.Size(87, 130);
             this.dealer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dealer1.TabIndex = 0;
             this.dealer1.TabStop = false;
@@ -221,10 +221,10 @@
             // dealer4
             // 
             this.dealer4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dealer4.Location = new System.Drawing.Point(380, 257);
+            this.dealer4.Location = new System.Drawing.Point(170, 386);
             this.dealer4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dealer4.Name = "dealer4";
-            this.dealer4.Size = new System.Drawing.Size(76, 104);
+            this.dealer4.Size = new System.Drawing.Size(87, 130);
             this.dealer4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dealer4.TabIndex = 0;
             this.dealer4.TabStop = false;
@@ -233,10 +233,10 @@
             // dealer2
             // 
             this.dealer2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dealer2.Location = new System.Drawing.Point(200, 257);
+            this.dealer2.Location = new System.Drawing.Point(97, 386);
             this.dealer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dealer2.Name = "dealer2";
-            this.dealer2.Size = new System.Drawing.Size(76, 104);
+            this.dealer2.Size = new System.Drawing.Size(87, 130);
             this.dealer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dealer2.TabIndex = 0;
             this.dealer2.TabStop = false;
@@ -245,10 +245,10 @@
             // dealer5
             // 
             this.dealer5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dealer5.Location = new System.Drawing.Point(472, 257);
+            this.dealer5.Location = new System.Drawing.Point(212, 386);
             this.dealer5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dealer5.Name = "dealer5";
-            this.dealer5.Size = new System.Drawing.Size(76, 104);
+            this.dealer5.Size = new System.Drawing.Size(87, 130);
             this.dealer5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.dealer5.TabIndex = 0;
             this.dealer5.TabStop = false;
@@ -256,26 +256,26 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(578, 257);
+            this.textBox4.Location = new System.Drawing.Point(328, 386);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 21);
+            this.textBox4.Size = new System.Drawing.Size(100, 25);
             this.textBox4.TabIndex = 1;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(578, 140);
+            this.textBox5.Location = new System.Drawing.Point(381, 135);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(171, 21);
+            this.textBox5.Size = new System.Drawing.Size(100, 25);
             this.textBox5.TabIndex = 2;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(770, 106);
+            this.button3.Location = new System.Drawing.Point(517, 117);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(66, 18);
+            this.button3.Size = new System.Drawing.Size(80, 40);
             this.button3.TabIndex = 3;
             this.button3.Text = "Retry";
             this.button3.UseVisualStyleBackColor = true;
@@ -283,9 +283,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(770, 137);
+            this.button4.Location = new System.Drawing.Point(517, 428);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(66, 23);
+            this.button4.Size = new System.Drawing.Size(80, 40);
             this.button4.TabIndex = 4;
             this.button4.Text = "룰 설명";
             this.button4.UseVisualStyleBackColor = true;
@@ -293,9 +294,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(770, 168);
+            this.button5.Location = new System.Drawing.Point(517, 476);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(68, 23);
+            this.button5.Size = new System.Drawing.Size(80, 40);
             this.button5.TabIndex = 5;
             this.button5.Text = "랭킹";
             this.button5.UseVisualStyleBackColor = true;
@@ -303,9 +305,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 461);
+            this.ClientSize = new System.Drawing.Size(704, 576);
+            this.Controls.Add(this.dealer5);
+            this.Controls.Add(this.dealer4);
+            this.Controls.Add(this.dealer3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.user5);
@@ -319,13 +324,10 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dealer5);
             this.Controls.Add(this.dealer2);
             this.Controls.Add(this.user2);
-            this.Controls.Add(this.dealer4);
             this.Controls.Add(this.dealer1);
             this.Controls.Add(this.user1);
-            this.Controls.Add(this.dealer3);
             this.Controls.Add(this.dealer0);
             this.Controls.Add(this.user0);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -373,6 +375,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+
     }
 }
 

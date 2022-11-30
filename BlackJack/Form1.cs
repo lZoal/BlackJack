@@ -11,6 +11,8 @@ namespace BlackJack
         static int cnt = 0, win = 0, lose = 0, draw = 0, uservalue = 0, dealervalue = 0, usercnt = 2;
         static int wincnt = 0, numcnt = 0;
         static bool ua = false, da = false;
+
+
         List<PictureBox> c_user = new List<PictureBox>(), d_com = new List<PictureBox>();
         TrumpCard card = new TrumpCard();
         private Boolean m_blLoginCheck = false;
@@ -37,13 +39,16 @@ namespace BlackJack
             get { return m_blLoginCheck; }
             set { m_blLoginCheck = value; }
         }
-
+        void Btn_set()//버튼 상태
+        {
+            button1.Enabled = !button1.Enabled;
+            button2.Enabled = !button2.Enabled;
+            button3.Enabled = !button3.Enabled;
+        }
         void InitGame()//게임 초기설정
         {
             ua = false; da = false;
-            button1.Enabled = true; //버튼 활성화
-            button2.Enabled = true;
-            button3.Enabled = false;
+            Btn_set();
             cnt = 0; uservalue = 0; dealervalue = 0; usercnt = 2;
             textBox2.Text = "";
             textBox3.Text = win + "승 " + draw + "무 " + lose + "패";
@@ -84,12 +89,14 @@ namespace BlackJack
         }
         void HitCard()
         {
+            cnt++;
             c_user[usercnt].Visible = true;
             c_user[usercnt++].Load(card.deck[++cnt].Second);
             uservalue = uservalue + card.deck[cnt].First;
             if (uservalue > 21 && ua)
             {
                 uservalue -= 10;
+                ua = false;
 
             }
             textBox1.Text = uservalue.ToString();
@@ -127,7 +134,7 @@ namespace BlackJack
         {
             d_com[0].Load(card.deck[2].Second);
             int i = 2;
-
+            cnt++;
             while (dealervalue <= 16)
             {
                 d_com[i].Visible = true;
@@ -182,9 +189,7 @@ namespace BlackJack
             textBox3.Text = win + "승 " + draw + "무 " + lose + "패";
             winratio = ((float)win / ((float)win + (float)lose)) * 100;
             textBox5.Text = winratio.ToString() + "%";
-            button1.Enabled = false;
-            button2.Enabled = false;
-            button3.Enabled = true;
+            Btn_set();
         }
 
         public Form1()
@@ -198,7 +203,8 @@ namespace BlackJack
         {
             Form2 _Form = new Form2(this);
             _Form.ShowDialog();
-
+            button1.Enabled=false;
+            button2.Enabled = false;
             if (!m_blLoginCheck) this.Close();
             InitGame();
             string path1 = @"Nickname.txt";
