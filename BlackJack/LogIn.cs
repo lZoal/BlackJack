@@ -19,6 +19,14 @@ namespace BlackJack
             InitializeComponent();
         }
 
+        public Game Game
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void bt_OK()
         {
             string path1 = @"ID.txt";

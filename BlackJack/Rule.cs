@@ -10,5 +10,13 @@ namespace BlackJack
             _Form1 = form1;
             InitializeComponent();
         }
+
+        public Game Game
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
