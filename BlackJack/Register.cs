@@ -19,6 +19,14 @@ namespace BlackJack
             InitializeComponent();
         }
 
+        public LogIn LogIn
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (isID == false && isNickname == false)
@@ -57,11 +65,13 @@ namespace BlackJack
                     {
                         isID = true;
                         MessageBox.Show("이미 사용중인 아이디입니다.");
+                        break;
                     }
                     else
                     {
                         isID = false;
                         MessageBox.Show("사용할 수 있는 아이디입니다.");
+                        break;
                     }
                 }
             }
@@ -69,10 +79,12 @@ namespace BlackJack
             {
                 isID = false;
                 MessageBox.Show("사용할 수 있는 아이디입니다.");
+
             }
             else
             {
                 MessageBox.Show("아이디를 입력해주세요.");
+
             }
         }
 
@@ -88,22 +100,28 @@ namespace BlackJack
                     {
                         isNickname = true;
                         MessageBox.Show("이미 사용중인 닉네임입니다.");
+                        break;
                     }
                     else
                     {
                         isNickname = false;
                         MessageBox.Show("사용할 수 있는 닉네임입니다.");
+                        break;
                     }
                 }
+
+
             }
             else if (textBox3.Text != "")
             {
                 isNickname = false;
                 MessageBox.Show("사용할 수 있는 닉네임입니다..");
+
             }
             else
             {
                 MessageBox.Show("닉네임를 입력해주세요.");
+
             }
         }
     }

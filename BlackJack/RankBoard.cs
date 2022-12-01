@@ -22,6 +22,14 @@ namespace BlackJack
             InitializeComponent();
         }
 
+        public Game Game
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Form5_Load(object sender, EventArgs e)
         {
             string path1 = @"Rank.txt";
