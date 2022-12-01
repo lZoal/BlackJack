@@ -51,11 +51,12 @@ namespace BlackJack
             c_user[0].Load(card.deck[cnt++].Second); //유저 0번째 1번째 불러오기
             c_user[1].Load(card.deck[cnt++].Second);
             d_com[0].Load("./img/52.png"); // 딜러패 첫장은 비공개
+            cnt++;
             d_com[1].Load(card.deck[cnt++].Second);  //딜러패 두째장
             
             uservalue = card.deck[0].First + card.deck[1].First; //유저패 총합
             dealervalue = card.deck[2].First + card.deck[3].First; //딜러패 총합
-            cnt++;
+            
 
             if ((card.deck[0].First == 1 || card.deck[1].First == 1) && uservalue + 10 <= 21) 
             {
